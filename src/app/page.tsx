@@ -1,18 +1,8 @@
-export const metadata = {
-  title: "Premium Carbon Fibre Manufacturer",
-  description: "Premium Carbon Fiber Automotive Parts - Coming Soon",
-  openGraph: {
-    title: "Premium Carbon Fibre Manufacturer",
-    description: "Premium Carbon Fiber Automotive Parts - Coming Soon",
-    images: ["https://sheokanddesignstudio.com/carbon-fiber-bg.jpg"],
-    url: "https://sheokanddesignstudio.com",
-  },
-};
-
-export default function RootLayout({ children }) {
+export default function Home() {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <div className="h-screen w-screen bg-carbon-fiber bg-cover flex flex-col justify-center items-center text-white text-center">
+      <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-pulse">Coming Soon</h1>
+      <p className="text-lg md:text-2xl">Premium Carbon Fiber Automotive Parts</p>
+    </div>
   );
 }
