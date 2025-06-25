@@ -10,3 +10,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.bg-carbon-fiber {
+  background-image: url('/carbon-fiber-bg.jpg');
+}
