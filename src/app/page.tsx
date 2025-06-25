@@ -1,8 +1,20 @@
-export default function Home() {
+export const metadata = {
+  title: "Premium Carbon Fibre Manufacturer",
+  description: "Premium Carbon Fiber Automotive Parts - Coming Soon",
+};
+
+export default function RootLayout({ children }) {
   return (
-    <div className="h-screen w-screen bg-carbon-fiber bg-cover flex flex-col justify-center items-center text-white text-center">
-      <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-pulse">Coming Soon</h1>
-      
-    </div>
+    <html lang="en">
+      <head>
+        <title>Premium Carbon Fibre Manufacturer</title>
+        <meta name="description" content="Premium Carbon Fiber Automotive Parts - Coming Soon" />
+        <meta property="og:title" content="Premium Carbon Fibre Manufacturer" />
+        <meta property="og:description" content="Premium Carbon Fiber Automotive Parts - Coming Soon" />
+        <meta property="og:image" content="https://sheokanddesignstudio.com/carbon-fiber-bg.jpg" />
+        <meta property="og:url" content="https://sheokanddesignstudio.com" />
+      </head>
+      <body>{children}</body>
+    </html>
   );
 }
